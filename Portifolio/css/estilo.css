@@ -1,5 +1,18 @@
-.conteiner{
-    border:1080px solid black;
-    margin: 1920px;
+.sobre-mim{
+    border: 200px solid white;
+    margin: 10px;
     background-color: black;
+}
+
+.sobre-mim .nome{
+    height: 580px;
+    width: 1430px;
+}
+
+.sobre-mim .img{
+    transition: transform 0.2 ease;
+}
+
+.sobre-mim .img:hover{
+    transform: scale(1.1);
 }
