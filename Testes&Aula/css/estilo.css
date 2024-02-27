@@ -1,5 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
+    color: black;
+}
+
 .container{
     border: 1px solid black;
-    margin: 40px;
+    margin: auto;
     background-color: blue;
+    width: 1200px;
+    padding: 0 20px;
+}
+
+.site-header, .site-footer{
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+}
+
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation li{
+    padding: 0 15px;
+}
+
+.profile-pic{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.project-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item{
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+    border-radius: 5px;
+}
+
+.project-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 3px solid black;
+}
+
+.project-info{
+    padding: 10px;
 }
