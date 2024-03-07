@@ -13,7 +13,7 @@ body {
 .container {
     margin: auto;
     background-color:rgb(65, 8, 8);
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .sobre-mim {
@@ -22,15 +22,29 @@ body {
     background-color: white;
 }
 
+.projetos {
+    margin-top: 30px;
+}
+
+.numero{
+    background-color:white;
+}
+
 .profile-pic {
-    float: left;
+    border-radius: 100%;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    /* float: left;
     width: 150px;
     height: 150px;
     border-radius: 100%;
     object-fit: cover;
     margin-right: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: none; */
+}   
 
 .site-header, .site-footer{
     background-color: rgb(65, 8, 8);
