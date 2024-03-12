@@ -71,6 +71,7 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 50px;
 }
 
 .project-item {
@@ -78,6 +79,12 @@ body {
     box-shadow: 0 0 10px #333;
     border-radius: 5px;
     transition: box-shadow 2s;
+}
+
+.project-text {
+    margin-right: 20px;
+    color: white;
+    margin-top: 50px;
 }
 
 .project-item:hover {
