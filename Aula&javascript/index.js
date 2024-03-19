@@ -59,15 +59,19 @@
 //titulo.innerText="Modificando o texto";
 
 let inputValor1 = document.getElementById("valor1");
-inputValor1.addEventListener("mouseover", function(){
+//inputValor1.addEventListener("mouseover", function(){
     //while(0 == 0){
-        alert("Ola");
+    //    alert("Ola");
     //}
-});
+//});
 
 function somar(){
     let valor1 = document.getElementById("valor1").value;
     let valor2 = document.getElementById("valor2").valor2;
 
     let resultado = parseFloat(valor1) + parseFloat(valor2);document.getElementById("resultado").innerText=resultado;
+    navigator.clipboard.writeText(resultado);
 }
+
+// ferramentas utilitarias no portifolio
+// 4devs
