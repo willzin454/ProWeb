@@ -277,3 +277,10 @@ a:hover{
     justify-content: center;
     color: #1e1e2a;
 }
+
+.profile-text{
+    width: 80%;
+    padding-top: 3%;
+    letter-spacing: 1px;
+    text-align: justify;
+}
