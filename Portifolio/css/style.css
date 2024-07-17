@@ -166,7 +166,7 @@ a:hover {
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: -650px -100px 0px 750px #ffffff;
+    box-shadow: -650px -50px 0px 750px #ffffff;
     z-index: 1;
 }
 
@@ -275,8 +275,14 @@ a:hover {
     background-color: var(--background-footer, #60e1e0);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 0;
     color: var(--color-footer, #1e1e2a);
+}
+
+.footer p{
+    margin: 0;
+    cursor: pointer;
 }
 
 .profile-card{
