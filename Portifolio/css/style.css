@@ -351,7 +351,7 @@ a:hover {
 }
 
 [data-tema='dark'] {
-    --background-body: #fcf9f9;
+    --background-body: #c4c4c4;
     --background-container: black;
     --background-footer: black;
     --color-body: #fcf9f9;
