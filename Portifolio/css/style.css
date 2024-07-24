@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --font-body: 'Rubik', sans-serif;
+    --font-header: 'Cinzel', serif;
+    --font-size-header: 2rem;
+    --font-size-body: 1rem;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -190,13 +197,14 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    margin: 3rem 0 0 0;
+    margin: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,12 +289,12 @@ a:hover {
     color: var(--color-footer, #1e1e2a);
 }
 
-.footer p{
+.footer p {
     margin: 0;
     cursor: pointer;
 }
 
-.profile-card{
+.profile-card {
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -316,7 +324,7 @@ a:hover {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
-    color:#000;
+    color: #000;
 }
 
 #repos-table th, #repos-table td {
@@ -337,7 +345,7 @@ a:hover {
 
 #repos-table tr:hover {
     background-color: #558cdd;
-    color: var(--color-table, white);;
+    color: var(--color-table, white);
 }
 
 #repos-table td a {
@@ -365,4 +373,88 @@ a:hover {
     --background-body: #60e1e0;
     --background-container: #60e1e0;
     --color-body: rgb(48, 43, 43);
+}
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-wrapper h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-wrapper p {
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 1rem 0;
+    }
+
+    .social-media a {
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-wrapper h2 {
+        font-size: 1rem;
+    }
+
+    .card-wrapper p {
+        font-size: 10px;
+    }
+
+    .footer {
+        padding: 0.5rem 0;
+    }
+
+    .social-media a {
+        padding: 0.5rem 1rem;
+    }
 }
