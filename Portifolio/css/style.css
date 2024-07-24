@@ -299,6 +299,56 @@ a:hover {
     text-align: justify;
 }
 
+#repositorios {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#repositorios h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#repos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    color:#000;
+}
+
+#repos-table th, #repos-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#repos-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--background-container, #60e1e0);
+    color: var(--color-body, #000);
+}
+
+#repos-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#repos-table tr:hover {
+    background-color: #558cdd;
+    color: var(--color-table, white);;
+}
+
+#repos-table td a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+#repos-table td a:hover {
+    color: #007bff;
+}
+
 [data-tema='dark'] {
     --background-body: #fcf9f9;
     --background-container: black;
@@ -307,6 +357,7 @@ a:hover {
     --color-footer: #fcf9f9;
     --checkbox-trace: #60e1e0;
     --background-card: white;
+    --color-table: black;
 }
 
 [data-tema='light'] {

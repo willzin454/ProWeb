@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     verificarTema();
+    buscarRepositorios();
 });
 
 function verificarTema(){
@@ -16,7 +17,7 @@ function alterarTema(){
     localStorage.setItem("tema", novoTema);
 };
 
-function copyToClipboard(text){
+function copiar(text){
     navigator.clipboard.writeText(text).then(function() {
         alert("Conteudo copiado para area de transferencia");
     }).catch(function(error) {
@@ -26,9 +27,34 @@ function copyToClipboard(text){
 }
 
 document.getElementById('email').addEventListener('click', function() {
-    copyToClipboard(this.innerText);
+    copiar(this.innerText);
 });
 
 document.getElementById('celular').addEventListener('click', function() {
-    copyToClipboard(this.innerText);
+    copiar(this.innerText);
 });
+
+async function buscarRepositorios() {
+    try {
+        const response = await fetch('https://api.github.com/users/willzin454/repos');
+        const repos = await response.json();
+        const reposTable = document.getElementById('repos-table').getElementsByTagName('tbody')[0];
+
+        repos.forEach(repo => {
+            const row = reposTable.insertRow();
+            row.insertCell(0).textContent = repo.name;
+            row.insertCell(1).textContent = repo.description || 'Sem descrição';
+            row.insertCell(2).textContent = repo.language || 'N/A';
+
+            const linkCell = row.insertCell(3);
+            const link = document.createElement('a');
+            link.href = repo.html_url;
+            link.textContent = 'Visitar';
+            link.target = '_blank';
+            linkCell.appendChild(link);
+        });
+    } catch (error) {
+        console.error('Erro ao buscar repositórios', error);
+        alert('Erro ao buscar repositórios do GitHub');
+    }
+}
