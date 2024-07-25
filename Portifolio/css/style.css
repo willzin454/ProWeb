@@ -193,6 +193,7 @@ a:hover {
     align-items: center;
     width: 90%;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .card {
@@ -393,33 +394,9 @@ a:hover {
         height: 150px;
     }
 
-    .menu-items ul li a {
-        font-size: 30px;
-    }
-
     #repos-table th, #repos-table td {
         font-size: 0.9rem;
     }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 10px;
-    }
-
-    .footer p {
-        margin: 5px 0;
-    }
-
-    #repos-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-
-
 
     h1 {
         font-size: 2rem;
@@ -458,17 +435,17 @@ a:hover {
     }
 
     #repositorios{
-        padding-right: 27px;
-    }
-
-    .checkbox{
-        padding-right: 5px;
+        padding-right: 2px;
     }
 
     #repos-table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+
+    .card-text{
+        padding-left: 1px;
     }
 }
 
@@ -515,16 +492,17 @@ a:hover {
     }
 
     #repositorios{
-        padding-right: 27px;
-    }
-
-    .checkbox{
-        padding-right: 5px;
+        padding-right: 2px;
+        color: black;
     }
 
     #repos-table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+
+    .card-text{
+        padding-left: 1px;
     }
 }
