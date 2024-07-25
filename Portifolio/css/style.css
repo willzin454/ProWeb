@@ -365,17 +365,9 @@ a:hover {
     --color-table: black;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .header-container {
         padding: 0 30px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 30px;
     }
 
     .social-media a {
@@ -419,9 +411,16 @@ a:hover {
     .footer p {
         margin: 5px 0;
     }
-}
 
-@media (max-width: 768px) {
+    #repos-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+
+
+
     h1 {
         font-size: 2rem;
     }
@@ -436,11 +435,7 @@ a:hover {
 
     .menu-items ul li a {
         font-size: 1.5rem;
-    }
-
-    .card {
-        width: 200px;
-        height: 200px;
+        padding-right: 30px;
     }
 
     .card-wrapper h2 {
@@ -465,6 +460,16 @@ a:hover {
     #repositorios{
         padding-right: 27px;
     }
+
+    .checkbox{
+        padding-right: 5px;
+    }
+
+    #repos-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 480px) {
@@ -482,6 +487,7 @@ a:hover {
 
     .menu-items ul li a {
         font-size: 1.2rem;
+        padding-right: 30px;
     }
 
     .card {
@@ -510,5 +516,15 @@ a:hover {
 
     #repositorios{
         padding-right: 27px;
+    }
+
+    .checkbox{
+        padding-right: 5px;
+    }
+
+    #repos-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
