@@ -1,7 +1,19 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     verificarTema();
     buscarRepositorios();
+    fechar();
 });
+
+function fechar(){
+    const toggle = document.getElementById('toggle');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggle.checked = false;
+        });
+    });
+};
 
 function verificarTema(){
     const temaArmazenado = localStorage.getItem('tema');
